@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SampleFooterTest.master.cs" Inherits="WebUI.SampleFooterTest" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link href="Styles/FooterStyleNew.css" rel="stylesheet" type="text/css"  />
+<link href="Styles/LoginStyle.css" rel="stylesheet" type="text/css" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     
+ <div id="wrapper">
+		
+		<div id="header">
+         <div class="DivHeader">
+    <img src="Images/UNCCLogo.jpg" class="DivHeaderImage"/>
+   <h1 class="DivHeaderH1">Accommodation Portal</h1>
+    </div>
+    <div class="DivMenuBackground">
+    <div class="DivMenuBar">
+    <asp:Menu ID="Menu_Header" runat="server" BackColor="Gray" DynamicHorizontalOffset="2"
+        Font-Names="Verdana" Font-Size="12" 
+        ForeColor="White" Orientation="Horizontal"
+        StaticSubMenuIndent="10px" onmenuitemclick="Menu_Header_MenuItemClick">
+        <StaticMenuItemStyle HorizontalPadding="20px" VerticalPadding="2px" />
+        <DynamicHoverStyle BackColor="#565656" ForeColor="White" />
+        <DynamicMenuStyle BackColor="#565656" />
+        <StaticSelectedStyle BackColor="#107742" />
+        <DynamicSelectedStyle BackColor="#107742" />
+        <DynamicMenuItemStyle HorizontalPadding="20px" VerticalPadding="2px" />
+     <Items>
+            <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="Home.aspx">
+            </asp:MenuItem>
+            <asp:MenuItem Text="HOUSING" Value="ABOUT" NavigateUrl="">
+            </asp:MenuItem>
+            <asp:MenuItem Text="ROOMATES" Value="ROOMATES" NavigateUrl="">
+            </asp:MenuItem>
+            <asp:MenuItem Text="MESSAGEBOARDS" Value="MESSAGEBOARDS" NavigateUrl="">
+            </asp:MenuItem>
+            <asp:MenuItem Text="RESOURCES" Value="RESOURCES" NavigateUrl="">
+            </asp:MenuItem>
+            <asp:MenuItem Text="HELP" Value="HELP" NavigateUrl="">
+            </asp:MenuItem>
+            <asp:MenuItem Text="SIGNUP" Value="SIGNUP" NavigateUrl="">
+            </asp:MenuItem>
+            <asp:MenuItem Text="LOGIN" Value="LOGIN" NavigateUrl="Login.aspx">
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu>
+    </div>
+    </div>
+		</div><!-- #header -->
+		
+		<div id="content">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+		</div><!-- #content -->
+		
+		<div id="footer">
+		</div><!-- #footer -->
+		
+	</div><!-- #wrapper -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿.DivHeader
+{
+    background-color:#107742;
+    height:100px;
+    width:100%
+}
+.DivHeaderImage
+{
+    float:left;
+    width:200px;
+    height:70px;
+    margin-top:20px;
+    margin-left:10px
+}
+.DivHeaderH1
+{
+    margin:0 auto;
+    top: 40%;
+    right:100px;
+    position: relative;
+    text-align:center;
+    color:White;
+    }
+.DivMenuBackground
+{
+    background-color:Gray;
+    height:50px
+}
+.DivMenuBar
+{
+    margin:0 auto; 
+    width:1000px;
+    top: 30%;
+    position: relative
+}
+.DivFooter
+{
+    /*bottom:0px;
+    position:absolute;
+    width:100%;
+*/
+text-align: center;
+	height: 100px;
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+    background-color:Gray;
+    clear:both;
+}
+.DivFooterH1
+{
+    text-align:center;
+}
+.Menu
+{
+   /* margin:0 auto; */
+    Display: inline-block;
+    text-align:center;
+   /* position:relative; */
+}
+.DivContentPlaceHolder
+{
+    width: 100%;
+	position: absolute;
+	top: 165px;
+	height: 420px;
+	margin:0 auto;
+}
+
+
+.LoginControl
+{
+    position:relative;
+    top:100px;
+      background-color:#F7F7DE;
+      border-color:#CCCC99;
+      border-style:solid;
+    border-width:1px;
+    font-family:Verdana;
+    font-size:16px; 
+     
+      
+}
+
+
+.DivLogin
+{
+    top:200px;
+     margin:0 auto; 
+}
